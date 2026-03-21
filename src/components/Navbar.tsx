@@ -7,7 +7,7 @@ const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/events", label: "Events" },
-  { to: "/info", label: "Info" },
+  { to: "/info", label: "Teams" },
   { to: "/gallery", label: "Gallery" },
   { to: "/crew", label: "Crew" },
 ];
@@ -80,3 +80,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

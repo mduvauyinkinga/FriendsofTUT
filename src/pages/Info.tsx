@@ -1,8 +1,3 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { toast } from "sonner";
 import { Users, Palette, Camera, Mic, BookOpen } from "lucide-react";
 
 const roles = [
@@ -13,42 +8,13 @@ const roles = [
 ];
 
 const Info = () => {
-  const [form, setForm] = useState({ name: "", email: "", department: "", message: "" });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    try {
-      const response = await fetch('http://localhost:3001/api/submit', {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      const data = await response.json();
-      if (data.success) {
-        toast.success("Application submitted! We'll be in touch 🎉");
-        setForm({ name: "", email: "", department: "", message: "" });
-      } else {
-        toast.error(data.message || 'Submission failed');
-      }
-    } catch (error) {
-      toast.error('Network error - is backend running?');
-    }
-    setLoading(false);
-  };
-
   return (
     <>
       <section className="gradient-hero py-16 md:py-24">
         <div className="container text-center">
-          <h1 className="text-5xl md:text-7xl text-primary-foreground mb-4">GET INVOLVED</h1>
+          <h1 className="text-5xl md:text-7xl text-primary-foreground mb-4">TEAMS</h1>
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
-            Join the movement. Find your department. Make an impact.
+            Meet our departments. Get in touch via email to collaborate.
           </p>
         </div>
       </section>
@@ -56,7 +22,7 @@ const Info = () => {
       {/* Roles */}
       <section className="py-16">
         <div className="container">
-          <h2 className="text-4xl text-center mb-10">DEPARTMENTS & ROLES</h2>
+          <h2 className="text-4xl text-center mb-10">DEPARTMENTS &amp; ROLES</h2>
           <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {roles.map((r) => (
               <div key={r.title} className="p-6 rounded-xl border border-border bg-card hover:border-secondary transition-colors">
@@ -69,55 +35,6 @@ const Info = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Join Form */}
-      <section className="py-16 bg-muted">
-        <div className="container max-w-lg">
-          <h2 className="text-4xl text-center mb-2">JOIN US</h2>
-          <div className="text-center mb-8">
-            <p className="text-muted-foreground mb-4">Fill out the form below and we'll get back to you.</p>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-destructive/10 border border-destructive/20 rounded-full text-sm font-semibold text-destructive">
-              📅 Closing date: 20th March
-            </div>
-          </div>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <Input
-              placeholder="Your Name"
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-              required
-            />
-            <Input
-              type="email"
-              placeholder="Email Address"
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-              required
-            />
-            <select
-              value={form.department}
-              onChange={(e) => setForm({ ...form, department: e.target.value })}
-              required
-              className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm"
-            >
-              <option value="">Select Department</option>
-              <option>Fashion</option>
-              <option>Media</option>
-              <option>Content Creation</option>
-              <option>Music</option>
-            </select>
-            <Textarea
-              placeholder="Tell us why you want to join..."
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-              rows={4}
-            />
-            <Button type="submit" disabled={loading} className="w-full bg-primary hover:bg-primary/90 btn-glow font-display text-lg tracking-wide">
-              {loading ? 'Sending...' : 'Submit Application'}
-            </Button>
-          </form>
         </div>
       </section>
     </>

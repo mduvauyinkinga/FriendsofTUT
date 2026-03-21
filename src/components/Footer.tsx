@@ -16,7 +16,7 @@ const Footer = () => (
           <Link to="/about" className="hover:text-primary font-medium transition-all hover:shadow-sm px-2 py-1 rounded">About Us</Link>
           <Link to="/events" className="hover:text-primary font-medium transition-all hover:shadow-sm px-2 py-1 rounded">Events</Link>
           <Link to="/gallery" className="hover:text-primary font-medium transition-all hover:shadow-sm px-2 py-1 rounded">Gallery</Link>
-          <Link to="/info" className="hover:text-primary font-medium transition-all hover:shadow-sm px-2 py-1 rounded">Get Involved</Link>
+<Link to="/info" className="hover:text-primary font-medium transition-all hover:shadow-sm px-2 py-1 rounded">Teams</Link>
         </div>
       </div>
       <div>

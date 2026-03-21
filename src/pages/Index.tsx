@@ -28,14 +28,14 @@ const Index = () => (
             FRIENDS OF TUT
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed font-light drop-shadow-sm">
-            A student-led creative movement — Fashion, Media, Music &amp; Culture at Tshwane University of Technology.
+            A student-led creative movement — Fashion, Media, Music & Culture at Tshwane University of Technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:from-primary/90 hover:shadow-glow shadow-glow px-12 py-8 font-display text-2xl tracking-wide rounded-2xl">
               <Link to="/events">Upcoming Events <ArrowRight className="ml-4" size={24} /></Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-2 border-foreground/30 text-foreground hover:bg-foreground/50 hover:border-foreground hover:shadow-glow shadow-glow px-12 py-8 font-display text-2xl tracking-wide rounded-2xl">
-              <Link to="/info">Get Involved</Link>
+              <Link to="/info">Teams</Link>
             </Button>
           </div>
         </div>
@@ -73,7 +73,7 @@ const Index = () => (
           Be part of a creative community that's shaping campus culture. Whether you're into fashion, music, media, or events — there's a place for you.
         </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 btn-glow shadow-glow font-display text-lg tracking-wide">
-            <Link to="/info">Get Involved <ArrowRight className="ml-2" size={18} /></Link>
+            <Link to="/info">Teams <ArrowRight className="ml-2" size={18} /></Link>
           </Button>
       </div>
     </section>
@@ -81,3 +81,4 @@ const Index = () => (
 );
 
 export default Index;
+
