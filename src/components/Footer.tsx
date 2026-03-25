@@ -38,7 +38,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="container mt-12 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-      © {new Date().getFullYear()} Friends of TUT. All rights reserved.
+      © 2025 - {new Date().getFullYear()} Friends of TUT. All rights reserved.
     </div>
   </footer>
 );

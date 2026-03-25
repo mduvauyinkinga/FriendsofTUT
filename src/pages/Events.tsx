@@ -23,7 +23,7 @@ const events = [
     description: "TUT eMalahleni students & our Witbank friends… this one is for YOU! Secure R600 deposit (full R1200 due 20 March). Includes transport, food/drinks, pool party, games. FNB: 63151097813 | WhatsApp: 076 217 9412",
   },
   {
-    id: 1,
+    id: 2,
     title: "Campus Style Showcase",
     date: "April 12, 2026",
     time: "14:00 – 18:00",
@@ -32,7 +32,7 @@ const events = [
     description: "A fashion showcase featuring student designers and models. Come support local talent and witness the freshest campus style.",
   },
   {
-    id: 2,
+    id: 3,
     title: "Creator Workshop: Content That Hits",
     date: "April 20, 2026",
     time: "10:00 – 13:00",
@@ -41,7 +41,7 @@ const events = [
     description: "Learn how to create viral content, build your brand on social media, and network with other student creators.",
   },
   {
-    id: 3,
+    id: 4,
     title: "Sunset Sessions Vol. 3",
     date: "May 3, 2026",
     time: "16:00 – 21:00",
@@ -50,7 +50,7 @@ const events = [
     description: "An outdoor music experience featuring DJs, live performances, food vendors, and good vibes only.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Friends of TUT General Meeting",
     date: "May 10, 2026",
     time: "12:00 – 13:30",

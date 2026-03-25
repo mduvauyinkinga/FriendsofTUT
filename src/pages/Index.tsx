@@ -66,15 +66,15 @@ const Index = () => (
     </section>
 
     {/* CTA */}
-    <section className="bg-foreground py-16">
+    <section className="py-20 bg-background">
       <div className="container text-center">
-        <h2 className="text-4xl md:text-5xl text-primary-foreground mb-4">JOIN THE MOVEMENT</h2>
-        <p className="text-primary-foreground/70 max-w-lg mx-auto mb-8">
+        <h2 className="text-4xl md:text-5xl text-foreground mb-4">JOIN THE MOVEMENT</h2>
+        <p className="text-foreground/70 max-w-lg mx-auto mb-8">
           Be part of a creative community that's shaping campus culture. Whether you're into fashion, music, media, or events — there's a place for you.
         </p>
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 btn-glow shadow-glow font-display text-lg tracking-wide">
-            <Link to="/info">Teams <ArrowRight className="ml-2" size={18} /></Link>
-          </Button>
+        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 btn-glow shadow-glow font-display text-lg tracking-wide">
+          <Link to="/info">Teams <ArrowRight className="ml-2" size={18} /></Link>
+        </Button>
       </div>
     </section>
   </>
