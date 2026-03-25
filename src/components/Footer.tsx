@@ -5,7 +5,9 @@ const Footer = () => (
   <footer className="bg-gradient-to-r from-foreground/95 to-card/50 text-foreground py-20 shadow-2xl">
     <div className="container grid gap-12 md:grid-cols-3">
       <div>
-        <h3 className="text-3xl font-display text-primary mb-4 shadow-glow">FRIENDS OF TUT</h3>
+        <h3 className="text-3xl font-display mb-4 shadow-glow">
+          <span className="text-primary">Friends</span> <span className="text-foreground">of TUT</span>
+        </h3>
         <p className="text-sm leading-relaxed">
           A student-led creative movement at TUT — uniting Fashion, Media, Music & Content Creation.
         </p>
