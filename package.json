@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mduvauyinkinga.github.io/FriendsofTUT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/FriendsofTUT/",
-    "preview": "vite preview"
+    "build": "vite build --base=/FriendsofTUT/ && cp dist/index.html dist/404.html",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -14,9 +16,10 @@
     "react-router-dom": "^6.30.3"
   },
   "devDependencies": {
-"@types/react": "^18.3.11",
+    "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
-    "vite": "^8.0.3"
+    "vite": "^8.0.3",
+    "gh-pages": "^6.0.0"
   }
 }
