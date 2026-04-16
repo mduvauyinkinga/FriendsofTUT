@@ -5,7 +5,7 @@ import About from './About';
 
 export default function App() {
   return (
-    <Router basename="/FriendsofTUT/">
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
